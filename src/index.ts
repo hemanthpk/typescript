@@ -1,15 +1,9 @@
-interface f {
-    name : string,
-    age : number
+    //functions
+    // function add(a:number,b number) : number
+    // {
+    //     return a+b;
+    // }
+type funtionType = (a:number,b:number) => number
+function add (a,b): funtionType{
+    return a+b
 }
-
-interface f1 extends f {
-    address : string
-}
-
-let p : f1 = {
-    name : "something",
-    age : 456,
-    address : "someOtherThing",
-}
-console.log(p.name+" "+p.age+" "+p.address+" ")
